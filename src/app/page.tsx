@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="sm:p-20 font-[family-name:var(--font-geist-sans)] flex-grow">
+    <div className=" font-[family-name:var(--font-geist-sans)] md:flex-grow border-2 border-yellow-500">
         
     </div>
   );
