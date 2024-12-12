@@ -29,18 +29,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
-      >
-        <div className="w-full min-h-full grid grid-rows-[auto_1fr_auto] grid-cols-6">
-          <Header />
-          <div className="col-span-4">
-            <Sidebar />
-            {children}
-          </div>
-        <Footer />
-        </div>
+      className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
+    >
+      {/* Main layout */}
+      <div className="min-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-6 gap-4">
+        {/* Header */}
+        <Header />
 
-      </body>
+        {/* Content */}
+          <Sidebar />
+          <main className="">{children}</main>
+
+
+        {/* Footer */}
+        <Footer />
+      </div>
+    </body>
     </html>
   );
 }
