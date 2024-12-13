@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
+import Main from "@/components/Main";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,20 +27,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body
       className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
     >
       {/* Main layout */}
-      <div className="min-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-6 gap-4">
+      <div className="min-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-[200px_1fr] gap-x-4">
         {/* Header */}
-        <Header />
+        <Header onMenuClick={} />
 
         {/* Content */}
-          <Sidebar />
-          <main className="">{children}</main>
-
+        <Sidebar />
+        <Main />
 
         {/* Footer */}
         <Footer />
