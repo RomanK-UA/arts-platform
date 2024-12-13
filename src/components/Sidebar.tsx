@@ -4,7 +4,7 @@ interface SidebarProps {
   isOpen: boolean;
 }
 
-const Sidebar = ({ isOpen }: SidebarProps) => {
+const Sidebar = () => {
   return (
     <aside className={`
       fixed md:static
@@ -17,7 +17,6 @@ const Sidebar = ({ isOpen }: SidebarProps) => {
       bg-white dark:bg-gray-900
       transition-transform duration-300
       md:translate-x-0
-      ${isOpen ? 'translate-x-0' : '-translate-x-full'}
       z-40
     `}>
       <div className='flex flex-col gap-4'>

@@ -36,7 +36,7 @@ export default function RootLayout({
       {/* Main layout */}
       <div className="min-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-[200px_1fr] gap-x-4">
         {/* Header */}
-        <Header onMenuClick={} />
+        <Header />
 
         {/* Content */}
         <Sidebar />
