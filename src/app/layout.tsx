@@ -30,21 +30,16 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
-    >
-      {/* Main layout */}
-      <div className="min-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-[200px_1fr] gap-x-4">
-        {/* Header */}
-        <Header />
-
-        {/* Content */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <div className="grid min-h-screen grid-cols-6 grid-rows-[auto_1fr_auto] border-2 border-yellow-600 gap-4">
+      <Header />
+      <section className="col-span-full grid grid-cols-[200px_1fr] border-2 border-black gap-4">
         <Sidebar />
         <Main />
-
-        {/* Footer */}
-        <Footer />
+      </section>
+      <Footer />
       </div>
+
     </body>
     </html>
   );

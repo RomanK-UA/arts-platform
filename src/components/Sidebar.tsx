@@ -7,19 +7,14 @@ interface SidebarProps {
 const Sidebar = () => {
   return (
     <aside className={`
-      fixed md:static
-      top-16 left-0 bottom-0
-      w-[300px] md:w-auto
-      row-start-2 row-end-3
-      p-4 
-      h-[calc(100vh-9rem)]
-      overflow-y-auto
+      hidden sm:block col-start-1 col-end-2
       bg-white dark:bg-gray-900
       transition-transform duration-300
       md:translate-x-0
       z-40
+      p-4
     `}>
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col gap-4 sticky top-[100px] border-2 border-green-400 w-full'>
         <h1 className='text-2xl font-bold'>Categories</h1>
         <div className='flex flex-col gap-2'>
           <h2 className='text-lg font-bold'>Art</h2>

@@ -1,0 +1,9 @@
+@layer components {
+    .gradient-text {
+        @apply text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500;
+    }
+
+    .input-base {
+        @apply bg-transparent border-2 border-yellow-500 rounded-full outline-none transition-all focus:border-pink-500;
+    }
+}
