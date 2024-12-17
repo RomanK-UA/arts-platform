@@ -8,7 +8,6 @@ const Sidebar = () => {
   return (
     <aside className={`
       hidden sm:block col-start-1 col-end-2
-      bg-white dark:bg-gray-900
       transition-transform duration-300
       md:translate-x-0
       z-40
