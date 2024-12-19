@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header = () => {
     return (
-        <header className='col-span-full flex justify-between p-4 h-16 mx-auto text-2xl w-full md:text-3xl backdrop-blur-md sticky top-0 z-50'>
+        <header className='col-span-full flex justify-between p-4 h-16 mx-auto text-2xl md:text-3xl text-text w-full  backdrop-blur-md sticky top-0 z-50'>
             <div className='flex justify-between w-full items-center gap-4'>
                 <div className='flex content-center '>
                     <button className="md:hidden p-2">

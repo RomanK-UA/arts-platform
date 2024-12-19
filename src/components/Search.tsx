@@ -12,7 +12,7 @@ const Search = () => {
           px-4
           text-sm lg:text-lg
           bg-transparent
-          border-2 border-yellow-500 
+          border-2 border-secondary
           rounded-full
           outline-none
           transition-all

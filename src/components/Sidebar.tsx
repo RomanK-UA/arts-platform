@@ -12,6 +12,8 @@ const Sidebar = () => {
       md:translate-x-0
       z-40
       p-4
+      border-r-2
+      border-r-secondary 
     `}>
       <div className='flex flex-col gap-4 sticky top-[100px] border-2 border-green-400 w-full'>
         <h1 className='text-2xl font-bold'>Categories</h1>

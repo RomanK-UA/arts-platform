@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <div className="grid min-h-screen grid-cols-6 grid-rows-[auto_1fr_auto] border-2 border-yellow-600 gap-4">
+      <div className="grid min-h-screen grid-cols-6 grid-rows-[auto_1fr_auto] gap-4">
       <Header />
       <section className="col-span-full grid grid-cols-[200px_1fr] gap-4">
         <Sidebar />

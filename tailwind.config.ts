@@ -18,6 +18,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#000000",
+        secondary: "#cf5c36",
+        text: "#eee5e9"
       },
       backgroundSize: {
         '300%': '300%',
