@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
-import Main from "@/components/Main";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,10 +32,9 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       <div className="grid min-h-screen grid-cols-6 grid-rows-[auto_1fr_auto] gap-4">
       <Header />
-      <section className="col-span-full grid grid-cols-[200px_1fr] gap-4">
-        <Sidebar />
-        <Main />
-      </section>
+      <main className="col-span-full grid grid-cols-[200px_1fr] gap-4">
+        {children}
+      </main>
       <Footer />
       </div>
 

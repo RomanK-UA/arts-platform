@@ -13,9 +13,8 @@ const Sidebar = () => {
       md:translate-x-0
       z-40
       p-4
-      border-2
-      border-secondary 
       rounded-md
+      bg-dark
     `}>
       <div className='flex flex-col gap-4 sticky top-[100px] border-2 border-green-400 w-full p-4'>
         <Button size='sm' variant='filter'>Click</Button>
