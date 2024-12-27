@@ -1,3 +1,9 @@
+"use client"
+import Protected from "@/components/Protected"
 export default function Page() {
-    return <p>Dashboard Page</p>;
+    return (
+    <Protected>
+      Dashboard
+    </Protected>
+    )
   }

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-const Search = () => {
+const Search: React.FC = () => {
   return (
-    <div className="relative">
+    <div className="relative flex items-center">
       <input 
         type="text" 
         placeholder="Search" 
@@ -23,7 +23,7 @@ const Search = () => {
       {/* Optional search icon */}
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
-        className="h-5 w-5 absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" 
+        className="h-5 w-5 absolute right-3 text-gray-400" 
         fill="none" 
         viewBox="0 0 24 24" 
         stroke="currentColor"
@@ -36,7 +36,7 @@ const Search = () => {
         />
       </svg>
     </div>
-  )
+  );
 }
 
-export default Search
+export default Search;

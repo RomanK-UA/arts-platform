@@ -27,16 +27,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   
+  const route = 
+  const user = {
+    userName: "Roman",
+     password: "123456"
+   }
+ 
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <div className="grid min-h-screen grid-cols-6 grid-rows-[auto_1fr_auto] gap-4">
-      <Header />
-      <main className="col-span-full grid grid-cols-[200px_1fr] gap-4">
-        {children}
-      </main>
-      <Footer />
-      </div>
+      {
+        user && (
+          <div className="grid min-h-screen grid-cols-6 grid-rows-[auto_1fr_auto] gap-4">
+            <Header />
+            <Sidebar />
+              <main className="col-span-full md:col-start-2 md:col-end-7 grid grid-cols-[200px_1fr] gap-4 container mx-auto border-2 border-secondary">
+                {children}
+              </main>
+            <Footer />
+          </div>
+        )
+      }
+      
+
 
     </body>
     </html>
