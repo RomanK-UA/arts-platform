@@ -4,17 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { usePathname } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,8 +16,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
-  const route = 
   const user = {
     userName: "Roman",
      password: "123456"
@@ -35,13 +23,13 @@ export default function RootLayout({
  
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={` antialiased`}>
       {
         user && (
-          <div className="grid min-h-screen grid-cols-6 grid-rows-[auto_1fr_auto] gap-4">
+          <div className="grid min-h-screen grid-cols-[200px_1fr] grid-rows-[auto_1fr_auto] gap-4">
             <Header />
             <Sidebar />
-              <main className="col-span-full md:col-start-2 md:col-end-7 grid grid-cols-[200px_1fr] gap-4 container mx-auto border-2 border-secondary">
+              <main className="gap-4 border-2 border-secondary">
                 {children}
               </main>
             <Footer />
